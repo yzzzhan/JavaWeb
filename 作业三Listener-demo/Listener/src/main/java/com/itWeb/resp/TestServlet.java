@@ -13,6 +13,7 @@ public class TestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.getWriter().write("测试 Servlet 正在运行！");
+            // 使用响应对象的 Writer 输出响应内容
+            response.getWriter().write("测试 Servlet 正在运行！");
     }
 }
